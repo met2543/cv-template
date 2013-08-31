@@ -1,0 +1,110 @@
+%---------------------------------------------------------------------------------------------
+% cv.tex
+%---------------------------------------------------------------------------------------------
+\documentclass[a4paper,10pt]{article}
+%---------------------------------------------------------------------------------------------
+% Package Imports
+%---------------------------------------------------------------------------------------------
+\usepackage[empty, cm]{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{enumitem}
+\raggedright
+\raggedbottom
+\renewcommand*{\familydefault}{\sfdefault}
+%---------------------------------------------------------------------------------------------
+% Define lengths
+%---------------------------------------------------------------------------------------------
+\newlength{\zero}
+\setlength{\zero}{0em}
+\newlength{\one}
+\setlength{\one}{1em}
+\newlength{\two}
+\setlength{\two}{2em}
+\newlength{\eight}
+\setlength{\eight}{8em}
+\newlength{\ten}
+\setlength{\ten}{10em}
+\newlength{\leftcol}
+\setlength{\leftcol}{\ten}
+\newlength{\colsep}
+\setlength{\colsep}{\two}
+\newlength{\rightcol}
+\setlength{\rightcol}{\textwidth}
+\addtolength{\rightcol}{-\leftcol}
+\addtolength{\rightcol}{-\colsep}
+\setlength{\tabcolsep}{\zero}
+%---------------------------------------------------------------------------------------------
+% Table column type with fixed width, left justified
+% @name f
+% @param 1 width
+%---------------------------------------------------------------------------------------------
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{\zero}}p{#1}}
+%---------------------------------------------------------------------------------------------
+% CV container
+% @name cv
+% @param 1 name
+% @param 2 short personal
+% @param 3 degree
+% @param 4 address line 1
+% @param 5 address line 2
+% @param 6 contact 1
+% @param 7 contact 2
+% @param 8 photo file
+% @param 9 sections
+%---------------------------------------------------------------------------------------------
+\newcommand{\cv}[9]{
+	\begin{document}
+		\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+			\textbf{\large{#1}} & \textit{#2} \\ \hline
+		\end{tabular*} \\ \vspace{\one}
+		\begin{tabular*}{\textwidth}{l@{\extracolsep{\colsep}}l@{\extracolsep{\fill}}r}
+			\textbf{Degree:} & #3 & \multirow{1}{*}{\includegraphics[width=\eight]{#8}} \\
+			\textbf{Address:} & #4 & \\
+							  & #5 & \\
+			\textbf{Phone:} & #6 & \\
+			\textbf{Email:} & #7 & \\
+		\end{tabular*} \\ \vspace{\two} #9
+	\end{document}
+}
+%---------------------------------------------------------------------------------------------
+% CV section container with name and content
+% @name cvsection
+% @param 1 section name
+% @param 2 section content
+%---------------------------------------------------------------------------------------------
+\newcommand{\cvsection}[2]{
+    \begin{tabular*}{\textwidth}{L{\textwidth}}
+        \textbf{\large{#1}} \\ \hline
+    \end{tabular*} \\ \vspace{\one} #2
+}
+%---------------------------------------------------------------------------------------------
+% CV cronological container with dates, title, subtitle, and itemized details
+% @name cvcron
+% @param 1 dates
+% @param 2 title
+% @param 3 subtitle
+% @param 4 detail items
+%---------------------------------------------------------------------------------------------
+\newcommand{\cvcron}[4]{
+    \begin{tabular*}{\textwidth}{L{\leftcol}@{\extracolsep{\colsep}}L{\rightcol}}
+		#1 & \textbf{#2} \\
+		   & \textit{#3} \\
+		   & \vspace{-\one} \begin{itemize}[label={-},nosep,leftmargin=*]#4\end{itemize} 
+    \end{tabular*} \vspace{-\one}
+}
+%---------------------------------------------------------------------------------------------
+% CV descriptive container
+% @name cvdesc
+% @param 1 description items
+%---------------------------------------------------------------------------------------------
+\newcommand{\cvdesc}[1]{
+    \begin{description}
+    		[nosep, style=multiline,
+			labelwidth=\leftcol, labelsep=\colsep, leftmargin=!]#1
+	\end{description} \vspace{\one}
+}
+
