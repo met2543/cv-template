@@ -1,0 +1,85 @@
+\input{template.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cv{Maziar Ebrahimitakalloo}
+		{Bsc in Electrical Engineering,Master of Business Administration}
+		{maziar@mobilabsolutions.com}
+		{+49 221 67770147}{
+
+	\cvsection{Professional Experience}{
+
+		\cvcron{September 2017 - Present}{Product Owner}
+				{MobiLab Solutions GmbH, Cologne, Germany}
+
+				}
+		\cvcron{Sep. 2016 - Sep 2017}{Corporate Affairs Manager}
+				{JTI Iran, Tehran, Iran}
+        {
+			\item{Product Track and Trace System Implementation}
+				}
+		\cvcron{Mar. 2015 - Aug.2016}{Trade Marketing Effectiveness Manager}
+				{JTI Iran, Tehran, Iran}
+         {
+			\item{Development of Integrated mobile based Sales and Merchandizing System for 700 field force}
+      \item{Development of a mobile based loyalty application for key outlets}
+				}
+
+		\cvcron{Mar. 2014 - Mar. 2015}{Consumer and Trade Strategy Manager}
+		   	{JTI Iran, Tehran, Iran}
+
+		\cvcron{Jun. 2013 - Mar. 2014}{Trade Marketing Manager}
+	  		{JTI Iran, Tehran, Iran}
+
+		\cvcron{Oct. 2012 - May 2013}{Management Development Trainee}
+		  	{JTI South Africa, Johannesburg, South Africa}
+			
+		\cvcron{Apr. 2012 - Sep 2012}{Management Development Trainee}
+		  	{JTI Turkey, Izmir, Turkey}
+        
+		\cvcron{Aug. 2011 - Apr 2012}{Management Development Trainee}
+		  	{JTI Iran, Tehran, Iran}
+        
+		\cvcron{Jan. 2010 - Jan. 20111}{MBA Programm Manager}
+			{Mehr Alborz Online University, Tehran, Iran}
+       {
+       \item{Continouos Development of the Online Learning Management System}
+       }
+	
+  \cvcron{Jan. 2009 - Jan. 2010}{Electricity Market Simulator Analyst}
+			{Niroo Research Institute , Tehran, Iran}
+
+	}
+
+	\cvsection{Education}{
+	
+		\cvcron{Jun. 2009}{Master of Business Administration }
+				{Sharif University of Tehcnology , Tehran, Iran}
+		{
+			\item{MasterThesis: Developing Decision Support System for analysis of private sector investment in Irnian power sector in the deregulated electrciity market}
+		}
+		\cvcron{Jen. 2006}{Bachelor od Science in Electrcial Engineering}
+				{Sharif University of Tehcnology , Tehran, Iran}
+		{
+			\item{Thesis: Modeling strategic behavior of market participants in the electricity market using game theory;case of Supply Function Nash Equillibrium}
+		}
+		
+	}
+
+	\cvsection{Volunteer Activities}{
+	
+		\cvcron{Jun. 2008 - Dec 2010}{Founding and Board Member}
+				{Corporate Governance and Responsibility Development Center of Iran , Tehran, Iran}
+		
+		\cvcron{Aug. 2006 - Mar. 2008}{Project Manager}
+				{Building AIESEC in Iran , Tehran, Iran}
+		
+	}
+	\cvsection{Skills}{
+		\cvdesc{
+
+			\item[Spoken Languages]{English, Farsi}
+			
+		}
+
+	}
+	}
+}
